@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoreline Tech - Software Consultancy & Product Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mesh gradient overlay -->
+    <div class="mesh-gradient"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon-wrapper">
+                        <span class="logo-icon">⚡</span>
+                        <div class="logo-glow"></div>
+                    </div>
+                    <span class="logo-text">Shoreline Tech</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#contact" class="btn-primary">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    7+ Years Building Enterprise Solutions
+                    <span class="badge-shine"></span>
+                </div>
+                <h1 class="hero-title">
+                    Transform Your Vision Into
+                    <span class="gradient-text typing-effect">Scalable Tech Products</span>
+                </h1>
+                <p class="hero-description">
+                    End-to-end software consultancy specializing in architecture design,
+                    product development, and cloud infrastructure. We architect solutions
+                    that scale from MVP to millions of users.
+                </p>
+                <div class="hero-quote">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">
+                        We don't just plan. We build. With laser focus and relentless execution,
+                        we turn ideas into production-ready systems that ship on time.
+                    </p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-large btn-primary">Start Your Project</a>
+                    <a href="#expertise" class="btn-large btn-secondary">View Capabilities</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Full-Stack Product Engineering & AI Integration</h2>
+                <p class="section-description">
+                    From concept to deployment, AI-powered solutions to modern cloud infrastructure
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Product Design & UX</h3>
+                    <p>User-centric design systems, interactive prototypes, and design-to-code workflows that ensure pixel-perfect implementation.</p>
+                    <ul class="service-tech">
+                        <li>Figma / Adobe XD</li>
+                        <li>Design Systems</li>
+                        <li>User Research</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Software Architecture</h3>
+                    <p>Scalable system design, microservices architecture, and technical decision-making that future-proofs your product.</p>
+                    <ul class="service-tech">
+                        <li>Microservices / Monoliths</li>
+                        <li>Event-Driven Architecture</li>
+                        <li>Domain-Driven Design</li>
+                        <li>API Design (REST/GraphQL)</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Modern web and mobile applications built with cutting-edge technologies and industry best practices.</p>
+                    <ul class="service-tech">
+                        <li>React / Next.js / Vue</li>
+                        <li>Node.js / Python / Go</li>
+                        <li>React Native / Flutter</li>
+                        <li>PostgreSQL / MongoDB</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>DevOps & Cloud Infrastructure</h3>
+                    <p>Automated CI/CD pipelines, cloud-native deployments, and infrastructure that scales with your business.</p>
+                    <ul class="service-tech">
+                        <li>AWS / GCP / Azure</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>Terraform / CloudFormation</li>
+                        <li>GitHub Actions / Jenkins</li>
+                    </ul>
+                </div>
+                <div class="service-card ai-highlight">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Intelligent Agents</h3>
+                    <p>Integrate cutting-edge AI capabilities into your product with custom agents, LLM integration, and intelligent automation.</p>
+                    <ul class="service-tech">
+                        <li>LLM Integration (GPT, Claude)</li>
+                        <li>Custom AI Agents</li>
+                        <li>RAG & Vector Search</li>
+                        <li>ML Model Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise That Delivers</h2>
+                <p class="section-description">
+                    Battle-tested engineering practices from 7 years of building production systems
+                </p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <div class="expertise-number">01</div>
+                    <h3>Cloud-Native Architecture</h3>
+                    <p>Design and implement scalable, resilient systems using cloud services, serverless computing, and containerization strategies.</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">02</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Database query optimization, caching strategies, CDN implementation, and code-level performance tuning for sub-second response times.</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">03</div>
+                    <h3>Security & Compliance</h3>
+                    <p>OAuth/JWT implementation, data encryption, GDPR compliance, penetration testing, and security audit protocols.</p>
+                </div>
+                <div class="expertise-item">
+                    <div class="expertise-number">04</div>
+                    <h3>Continuous Integration</h3>
+                    <p>Automated testing pipelines, blue-green deployments, feature flags, and monitoring with observability platforms.</p>
+                </div>
+                <div class="expertise-item ai-expertise">
+                    <div class="expertise-number">05</div>
+                    <h3>AI & Agent Integration</h3>
+                    <p>Build intelligent systems with LLM APIs, custom AI agents, retrieval-augmented generation (RAG), and seamless integration with your existing infrastructure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Engineering Philosophy</h2>
+                <p class="section-description">
+                    Built on principles that ensure quality, maintainability, and client success
+                </p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Client-Centric Approach</h3>
+                    <p>We start with your requirements, not our assumptions. Every technical decision is aligned with your business goals, user needs, and success metrics. Your vision drives our architecture.</p>
+                    <ul class="value-points">
+                        <li>Deep requirement analysis</li>
+                        <li>Regular communication & updates</li>
+                        <li>Flexible to changing needs</li>
+                    </ul>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>SOLID Principles</h3>
+                    <p>We write code that's maintainable, extensible, and testable. Following SOLID principles ensures your codebase remains clean, modular, and easy to scale as your product grows.</p>
+                    <ul class="value-points">
+                        <li>Single Responsibility design</li>
+                        <li>Open-Closed architecture</li>
+                        <li>Dependency Inversion patterns</li>
+                    </ul>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="2" x2="12" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Clean Code Standards</h3>
+                    <p>Readable, well-documented code that your team can understand and extend. We follow industry best practices, meaningful naming conventions, and comprehensive testing strategies.</p>
+                    <ul class="value-points">
+                        <li>Self-documenting code</li>
+                        <li>Comprehensive test coverage</li>
+                        <li>Code review & refactoring</li>
+                    </ul>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 2L12 6L16 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Strategic Decision Making</h3>
+                    <p>Every technical choice is backed by data, experience, and long-term thinking. We evaluate trade-offs, consider scalability, and choose technologies that serve your specific use case.</p>
+                    <ul class="value-points">
+                        <li>Data-driven architecture</li>
+                        <li>Trade-off analysis</li>
+                        <li>Future-proof technology stack</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agent Integration Section -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🤖 AI-Powered Innovation</h2>
+                <p class="section-description">
+                    Transform your product with intelligent agents and cutting-edge AI capabilities
+                </p>
+            </div>
+            <div class="ai-capabilities">
+                <div class="ai-capability-card">
+                    <div class="ai-icon">🧠</div>
+                    <h3>Custom AI Agents</h3>
+                    <p>Build autonomous agents that understand context, make decisions, and take actions on behalf of your users. From customer support bots to intelligent workflow automation.</p>
+                    <div class="ai-features">
+                        <span>Multi-step reasoning</span>
+                        <span>Tool integration</span>
+                        <span>Memory & context</span>
+                    </div>
+                </div>
+                <div class="ai-capability-card">
+                    <div class="ai-icon">🔗</div>
+                    <h3>LLM Integration</h3>
+                    <p>Seamlessly integrate GPT-4, Claude, Gemini, and other large language models into your application with optimized prompting and fine-tuning.</p>
+                    <div class="ai-features">
+                        <span>API optimization</span>
+                        <span>Cost management</span>
+                        <span>Prompt engineering</span>
+                    </div>
+                </div>
+                <div class="ai-capability-card">
+                    <div class="ai-icon">📚</div>
+                    <h3>RAG & Knowledge Systems</h3>
+                    <p>Build intelligent knowledge bases with retrieval-augmented generation, vector databases, and semantic search for accurate, context-aware responses.</p>
+                    <div class="ai-features">
+                        <span>Vector embeddings</span>
+                        <span>Semantic search</span>
+                        <span>Document processing</span>
+                    </div>
+                </div>
+                <div class="ai-capability-card">
+                    <div class="ai-icon">⚡</div>
+                    <h3>ML Model Deployment</h3>
+                    <p>Deploy and scale machine learning models with production-ready infrastructure, monitoring, and A/B testing capabilities.</p>
+                    <div class="ai-features">
+                        <span>Model serving</span>
+                        <span>Auto-scaling</span>
+                        <span>Performance monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Showcase Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Enterprise-Grade Architecture</h2>
+                <p class="section-description">
+                    Proven architectural patterns that handle millions of requests
+                </p>
+            </div>
+            <div class="architecture-showcase">
+                <div class="arch-card">
+                    <div class="arch-header">
+                        <span class="arch-badge">Microservices</span>
+                        <h3>Distributed Systems Design</h3>
+                    </div>
+                    <p>Independent service deployment with API gateways, service mesh (Istio), event-driven communication, and circuit breakers for fault tolerance.</p>
+                    <div class="arch-tech-stack">
+                        <span>API Gateway</span>
+                        <span>Message Queue</span>
+                        <span>Service Discovery</span>
+                        <span>Load Balancing</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-header">
+                        <span class="arch-badge">Data Engineering</span>
+                        <h3>Scalable Data Architecture</h3>
+                    </div>
+                    <p>Real-time data pipelines, ETL workflows, data warehousing with Snowflake/BigQuery, and analytics infrastructure for data-driven decisions.</p>
+                    <div class="arch-tech-stack">
+                        <span>Data Pipelines</span>
+                        <span>Real-time Analytics</span>
+                        <span>Data Lakes</span>
+                        <span>Stream Processing</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-header">
+                        <span class="arch-badge">Infrastructure</span>
+                        <h3>Infrastructure as Code</h3>
+                    </div>
+                    <p>Automated infrastructure provisioning, multi-region deployments, disaster recovery strategies, and zero-downtime deployment patterns.</p>
+                    <div class="arch-tech-stack">
+                        <span>Terraform</span>
+                        <span>Kubernetes</span>
+                        <span>Auto-scaling</span>
+                        <span>Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Engineering Process</h2>
+                <p class="section-description">
+                    A systematic approach to building world-class software
+                </p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Architecture</h3>
+                    <p>Technical requirements gathering, system design, technology stack selection, and architectural decision records (ADRs).</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design & Prototyping</h3>
+                    <p>UI/UX design, design system creation, interactive prototypes, and user testing before development begins.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Agile Development</h3>
+                    <p>Sprint-based development, code reviews, test-driven development (TDD), and continuous integration from day one.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>DevOps & Launch</h3>
+                    <p>Infrastructure setup, CI/CD pipeline configuration, performance testing, and production deployment with monitoring.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Maintenance & Scale</h3>
+                    <p>Ongoing support, performance optimization, feature additions, and scaling infrastructure as you grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet the Founders</h2>
+                <p class="section-description">
+                    7+ years of combined expertise in building scalable tech products
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="bhoomika.jpg" alt="Bhoomika RS" class="avatar-image">
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <h3>Bhoomika RS</h3>
+                    <div class="team-role">Co-Founder & Technical Architect</div>
+                    <p class="team-bio">
+                        Full-stack engineer and technical architect with 7+ years of experience building
+                        enterprise-grade applications. Specializes in system design, cloud architecture,
+                        and leading engineering teams to deliver scalable solutions.
+                    </p>
+                    <div class="team-expertise">
+                        <span>System Architecture</span>
+                        <span>Cloud Infrastructure</span>
+                        <span>Team Leadership</span>
+                    </div>
+                    <a href="https://linkedin.com/in/bhoomika-rs-191550151" target="_blank" rel="noopener" class="team-linkedin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="sagar.jpg" alt="Sagar" class="avatar-image">
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <h3>Sagar</h3>
+                    <div class="team-role">Co-Founder & Engineering Lead</div>
+                    <p class="team-bio">
+                        Experienced software engineer with deep expertise in full-stack development,
+                        AI integration, and product engineering. Passionate about building intelligent
+                        systems and delivering high-quality software solutions.
+                    </p>
+                    <div class="team-expertise">
+                        <span>Full-Stack Development</span>
+                        <span>AI Integration</span>
+                        <span>Product Engineering</span>
+                    </div>
+                    <a href="https://linkedin.com/in/sagar-cs-693271151" target="_blank" rel="noopener" class="team-linkedin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Build Something Amazing?</h2>
+                    <p class="contact-tagline">
+                        Let's discuss your project and architect a solution that scales with your vision.
+                    </p>
+                    <div class="founder-info">
+                        <div class="founder-name">Bhoomika RS</div>
+                        <div class="founder-title">Founder & Technical Architect</div>
+                        <div class="founder-bio">
+                            7+ years of experience architecting and building scalable tech products
+                            across multiple industries. Specialized in full-stack development,
+                            cloud infrastructure, and technical leadership.
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:bhoomikars28@gmail.com">bhoomikars28@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <a href="tel:+918123536803">+91 8123536803</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="ai-agents">AI & Agent Integration</option>
+                                <option value="architecture">Architecture Consulting</option>
+                                <option value="development">Full-Stack Development</option>
+                                <option value="devops">DevOps & Cloud</option>
+                                <option value="design">Product Design</option>
+                                <option value="all">Complete Product Build</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-large btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Shoreline Tech</span>
+                    </div>
+                    <p>Building scalable tech products with enterprise-grade architecture.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Product Design</a></li>
+                            <li><a href="#services">Development</a></li>
+                            <li><a href="#services">Architecture</a></li>
+                            <li><a href="#services">DevOps</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#expertise">Expertise</a></li>
+                            <li><a href="#architecture">Architecture</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shoreline Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
